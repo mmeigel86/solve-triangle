@@ -2,13 +2,13 @@
   "name": "solve-triangle",
   "version": "1.0.0",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Michael Meigel",
   "repository": "github:mmeigel86/repo",
   "license": "MIT",
-  "keyword":"trigonometry triangle",
+  "keyword": "trigonometry triangle",
   "description": "Triangle solver. Calculates side lengths, angle values, area, centroid, incircle, circumcircle and altitudes."
 }
