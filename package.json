@@ -1,6 +1,6 @@
 {
   "name": "solve-triangle",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "Michael Meigel",
   "repository": "github:mmeigel86/solve-triangle",
   "license": "MIT",
-  "keyword": [
+  "keywords": [
     "trigonometry",
     "triangle"
   ],
