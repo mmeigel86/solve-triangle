@@ -9,6 +9,9 @@
   "author": "Michael Meigel",
   "repository": "github:mmeigel86/solve-triangle",
   "license": "MIT",
-  "keyword": "trigonometry triangle",
+  "keyword": [
+    "trigonometry",
+    "triangle"
+  ],
   "description": "Triangle solver. Calculates side lengths, angle values, area, centroid, incircle, circumcircle and altitudes."
 }
