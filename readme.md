@@ -23,7 +23,7 @@ import {solve, solvePoints} from "solve-triangle"
 const solvedTriangle =  solve({a:1, b:1.5, gamma:30});
 
 /* Parameters are coordinates represented by Arrays or Objects */
-const solvedTriangle =  solve(A:[0, 0], B:{x:-1, 2.5}, C:[10, -3]);
+const solvedTriangle =  solvePoints(A:[0, 0], B:{x:-1, 2.5}, C:[10, -3]);
 
 /* Return is Object with either an Array of solution Objects or an error message */
 if(solvedTriangle.solutions.length>0){
