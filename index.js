@@ -402,16 +402,16 @@ export function solve({ a, b, c, alpha, beta, gamma, mode = "deg" }) {
  * @returns {Array.number} [x, y] 
  */
 function pointToArray(point) {
-    if(!checkCoordinate(point)){
+    if (!checkCoordinate(point)) {
         return null;
     }
     if (Array.isArray(point)) {
         return point;
     }
-    if (Object.hasOwn(point, "x")) {
+    if ("x" in point) {
         return [point.x, point.y];
     }
-    if (Object.hasOwn(point, "X")) {
+    if ("X" in point) {
         return [point.X, point.Y];
     }
     return null;
@@ -427,7 +427,7 @@ function pointToArray(point) {
 export function distance(p1, p2) {
     p1 = pointToArray(p1);
     p2 = pointToArray(p2);
-    if(p1===null || p2===null){
+    if (p1 === null || p2 === null) {
         return null;
     }
     return Math.hypot(p1[0] - p2[0], p1[1] - p2[1]);
@@ -446,10 +446,10 @@ function checkCoordinate(p) {
     if (Array.isArray(p) && p.length >= 2) {
         return !isNaN(p[0]) && !isNaN(p[1]);
     }
-    if (Object.hasOwn(p, "x") && Object.hasOwn(p, "y")) {
+    if ("x" in p && "y" in p) {
         return !isNaN(p.x) && !isNaN(p.y);
     }
-    if (Object.hasOwn(p, "X") && Object.hasOwn(p, "Y")) {
+    if ("X" in p && "Y" in p) {
         return !isNaN(p.X) && !isNaN(p.Y);
     }
     return false;
